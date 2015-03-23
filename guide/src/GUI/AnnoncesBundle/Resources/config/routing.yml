@@ -1,0 +1,3 @@
+gui_annonces_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GUIAnnoncesBundle:Default:index }
