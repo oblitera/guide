@@ -1,0 +1,90 @@
+@coul_gamme_1:#05dbf2;
+@coul_gamme_2:#309ac1;
+@coul_gamme_3:#03a6a6;
+@coul_gamme_4:#014034;
+@coul_gamme_5:#71b620;
+@blanc:white;
+@bleu_foncer:#2161a7;
+@fond_site:#ececec;
+
+/* Classes abstraites */
+.over_bt_header
+{
+	background-color:@coul_gamme_1;
+	color:@blanc;
+} 
+
+.row
+{
+	margin:0px;
+	padding:0px;
+}
+
+/* ------------- */
+/* BODY          */
+/* ------------- */
+body, html
+{
+	background-color:@fond_site;
+	min-height:100%;
+}
+
+/* ------------- */
+/* HEADER - MENU */
+/* ------------- */
+#body_menu
+{
+	background-color:@coul_gamme_2;
+	.navbar-nav
+	{
+		a
+		{
+			font-weight: bold;
+		}
+	}
+}
+
+#body_menu_d
+{
+	a
+	{
+		color:@blanc;
+		&:hover
+		{
+			.over_bt_header;
+		}
+	}
+}
+
+#body_menu_g
+{
+	a
+	{
+		padding-left:50px;
+		padding-right:50px;
+		background-color:@bleu_foncer;
+		color:@blanc;
+		&:hover
+		{
+			.over_bt_header;
+		}
+	}
+}
+
+/* ------------- */
+/* CONTENT */
+/* ------------- */
+
+#body_content
+{
+	min-height:800px;
+}
+
+/* ------------- */
+/* FOOTER */
+/* ------------- */
+#body_footer
+{
+	min-height: 300px;
+	background-color:@coul_gamme_2;
+}

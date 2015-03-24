@@ -1,5 +1,56 @@
-.row
-{
-	margin-left:0px;
-	margin-right:0px;
+/* Classes abstraites */
+.over_bt_header {
+  background-color: #05dbf2;
+  color: white;
+}
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+/* ------------- */
+/* BODY          */
+/* ------------- */
+body,
+html {
+  background-color: #ececec;
+  min-height: 100%;
+}
+/* ------------- */
+/* HEADER - MENU */
+/* ------------- */
+#body_menu {
+  background-color: #309ac1;
+}
+#body_menu .navbar-nav a {
+  font-weight: bold;
+}
+#body_menu_d a {
+  color: white;
+}
+#body_menu_d a:hover {
+  background-color: #05dbf2;
+  color: white;
+}
+#body_menu_g a {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #2161a7;
+  color: white;
+}
+#body_menu_g a:hover {
+  background-color: #05dbf2;
+  color: white;
+}
+/* ------------- */
+/* CONTENT */
+/* ------------- */
+#body_content {
+  min-height: 800px;
+}
+/* ------------- */
+/* FOOTER */
+/* ------------- */
+#body_footer {
+  min-height: 300px;
+  background-color: #309ac1;
 }
