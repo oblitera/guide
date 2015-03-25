@@ -65,7 +65,7 @@
   position: relative;
   min-height: 100px;
   background-color: white;
-  border: 1px solid #71b620;
+  border: 1px solid #309ac1;
   margin-bottom: 30px;
 }
 .block_type .bandeau-wrapper {
@@ -74,7 +74,7 @@
   top: 15px;
 }
 .block_type .bandeau-wrapper .bandeau-front {
-  background-color: #71b620;
+  background-color: #309ac1;
   height: 30px;
   width: 110px;
   position: relative;
@@ -158,6 +158,25 @@
 }
 .block_type .very_small_bandeau .bandeau-front {
   width: 100px;
+}
+.block_type .important_bandeau .bandeau-front {
+  background-color: #71b620;
+}
+#francemap_conteneur {
+  margin: 10px;
+}
+#francemap_conteneur #francemap {
+  width: 100%;
+  height: 400px;
+}
+#francemap_conteneur #francemap_liste ul {
+  list-style-type: none;
+}
+#francemap_conteneur #francemap_liste ul .region_survoler {
+  text-decoration: underline;
+}
+#francemap_conteneur #francemap_liste ul .region_survoler a {
+  font-weight: bold;
 }
 /* ------------- */
 /* BODY          */

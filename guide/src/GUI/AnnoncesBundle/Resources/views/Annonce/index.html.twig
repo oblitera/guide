@@ -1,12 +1,18 @@
 {% extends "GUIAnnoncesBundle::layout_annonce.html.twig" %}
 
+{% block jsSupplementaire %}
+	<script type="text/javascript" src="{{ asset('js/carte/france/jquery.vmap.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/carte/france/jquery.vmap.france.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/carte/france/buildemap_index.js') }}"></script>
+{% endblock %}
+
 {% block title %}
 	{{ parent() }} Accueil
 {% endblock %}
 
 {% block body_content %}
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+		<div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-lg-offset-0">
 			<div class="block_type">
 				<div class="bandeau-wrapper small_bandeau">
 					<div class="bandeau-front">Recherche par région</div>
@@ -17,10 +23,55 @@
 					<div class="bandeau-back-left"></div>
 					<div class="bandeau-back-right"></div>
 				</div>
+				<div class="row" id="francemap_conteneur">
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<div id="francemap"></div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<div id="francemap_liste">
+							<ul>
+								<li id_map="21"><a href="">Nord-Pas-de-Calais</a></li>
+								<li id_map="1"><a href="">Picardie</a></li>
+								<li id_map="2"><a href="">Haute-Normandie</a></li>
+								<li id_map="3"><a href="">Basse-Normandie</a></li>
+								<li id_map="4"><a href="">Île-de-France</a></li>
+								<li id_map="5"><a href="">Bretagne</a></li>
+								<li id_map="6"><a href="">Champagne-Ardenne</a></li>
+								<li id_map="7"><a href="">Alsace</a></li>
+								<li id_map="8"><a href="">Pays de la Loire</a></li>
+								<li id_map="9"><a href="">Centre</a></li>
+								<li id_map="10"><a href="">Bourgogne</a></li>
+								<li id_map="11"><a href="">Rhône-Alpes</a></li>
+								<li id_map="12"><a href="">Aquitaine</a></li>
+								<li id_map="13"><a href="">Provence-Alpes-Côte d'Azur</a></li>
+								<li id_map="14"><a href="">Corse</a></li>
+								<li id_map="15"><a href="">Mid_mapi-Pyrénées</a></li>
+								<li id_map="16"><a href="">Languedoc-Roussillon</a></li>
+								<li id_map="17"><a href="">Lorraine</a></li>
+								<li id_map="18"><a href="">Poitou-Charentes</a></li>
+								<li id_map="19"><a href="">Limousin</a></li>
+								<li id_map="20"><a href="">Auvergne</a></li>
+								<li id_map="22"><a href="">Franche-Comté</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="block_type">
+				<div class="bandeau-wrapper small_bandeau important_bandeau">
+					<div class="bandeau-front">Les meilleurs guides</div>
+					<div class="bandeau-edge-topleft"></div>
+					<div class="bandeau-edge-topright"></div>
+					<div class="bandeau-edge-bottomleft"></div>
+					<div class="bandeau-edge-bottomright"></div>
+					<div class="bandeau-back-left"></div>
+					<div class="bandeau-back-right"></div>
+				</div>
 			</div>
 			<div class="block_type">
 				<div class="bandeau-wrapper small_bandeau">
-					<div class="bandeau-front">Les meilleurs guides</div>
+					<div class="bandeau-front">Ils nous ont rejoint</div>
 					<div class="bandeau-edge-topleft"></div>
 					<div class="bandeau-edge-topright"></div>
 					<div class="bandeau-edge-bottomleft"></div>
@@ -32,7 +83,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1">
 			<div class="block_type">
-				<div class="bandeau-wrapper very_small_bandeau">
+				<div class="bandeau-wrapper very_small_bandeau important_bandeau">
 					<div class="bandeau-front">PUB</div>
 					<div class="bandeau-edge-topleft"></div>
 					<div class="bandeau-edge-topright"></div>
