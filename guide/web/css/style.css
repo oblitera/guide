@@ -3,12 +3,22 @@
   background-color: #05dbf2;
   color: white;
 }
+.habillage_style_bt_vert {
+  padding: 10px 15px 10px 25px;
+  background-color: #71b620;
+  color: white;
+  display: inline-block;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+}
 /* ---------------- */
 /* Element du site  */
 /* ---------------- */
 .row {
-  margin: 0px;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .col-lg-1,
 .col-lg-10,
@@ -162,6 +172,19 @@
 .block_type .important_bandeau .bandeau-front {
   background-color: #71b620;
 }
+.block_type .block_type_content_padding {
+  width: 100%;
+  padding: 60px 10px 20px 10px;
+}
+.block_type .block_type_content_full {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+}
+.block_type .espacement_top {
+  margin-top: 30px;
+}
 #francemap_conteneur {
   margin: 10px;
 }
@@ -225,6 +248,88 @@ html {
   min-height: 800px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.item_liste_annonce .liste_annonce_img img {
+  width: 80%;
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 3px solid #2161a7;
+}
+.item_liste_annonce .liste_annonce_info h3 {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: 18px;
+}
+.item_liste_annonce .liste_annonce_info div {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.item_liste_annonce .liste_annonce_info .preview_info {
+  font-size: 16px;
+}
+.item_liste_annonce .liste_annonce_info .info_geo {
+  padding: 10px 15px 10px 25px;
+  background-color: #71b620;
+  color: white;
+  display: inline-block;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+.item_liste_annonce .liste_annonce_info .info_geo a {
+  color: black;
+  text-decoration: underline;
+}
+.item_liste_annonce .liste_annonce_info .link_preview {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #309ac1;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+/* ---------------------- */
+/* BLOCK TOP ANNONCE JOUR */
+/* ---------------------- */
+.block_top_annonce_jour .block_type_content_full {
+  position: relative;
+}
+.block_top_annonce_jour .block_type_content_full .top_annonce_jour_img {
+  width: 100%;
+}
+.block_top_annonce_jour .block_type_content_full .legende_top_jour {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: url('../font-noir-transparent.png?i=1');
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.block_top_annonce_jour .block_type_content_full .legende_top_jour .legende_top_jour_info .nom {
+  color: #939393;
+  font-size: 16px;
+}
+.block_top_annonce_jour .block_type_content_full .legende_top_jour .legende_top_jour_info .lieu {
+  color: white;
+  font-size: 18px;
+}
+.block_top_annonce_jour .block_type_content_full .legende_top_jour .legende_top_jour_bt {
+  padding: 10px 15px 10px 25px;
+  background-color: #71b620;
+  color: white;
+  display: inline-block;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
 }
 /* ------------- */
 /* FOOTER */

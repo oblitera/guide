@@ -10,6 +10,19 @@
 @bandeau_font_size:18px;
 
 /* Classes abstraites */
+.border_radius_all(@value)
+{
+	border-radius: @value @value @value @value;
+	-moz-border-radius: @value @value @value @value;
+	-webkit-border-radius: @value @value @value @value;
+}
+
+.clear_padding_margin()
+{
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
 .dimention_bandeau(@taille)
 {
 	.bandeau-front
@@ -32,13 +45,22 @@
 	color:@blanc;
 } 
 
+.habillage_style_bt_vert
+{
+	padding:10px 15px 10px 25px;
+	background-color: @coul_gamme_5;
+	color:@blanc;
+	display: inline-block;
+	.border_radius_all(10px);				
+	font-size:16px;
+}
+
 /* ---------------- */
 /* Element du site  */
 /* ---------------- */
 .row
 {
-	margin:0px;
-	padding:0px;
+	.clear_padding_margin;
 }
 
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
@@ -172,6 +194,24 @@
 	{
 		.couleur_bandeau(@coul_gamme_5)
 	}
+
+	.block_type_content_padding
+	{
+		width:100%;
+		padding:60px 10px 20px 10px;
+	}
+
+	.block_type_content_full
+	{
+		width:100%;
+		.clear_padding_margin;
+		overflow-x:hidden;
+	}
+
+	.espacement_top
+	{
+		margin-top:30px;
+	}
 }
 
 #francemap_conteneur
@@ -270,6 +310,106 @@ body, html
 	min-height:800px;
 	padding-top:20px;
 	padding-bottom:20px;
+}
+
+.item_liste_annonce
+{
+	.liste_annonce_img
+	{
+		img
+		{
+			width:80%;
+			max-width: 150px;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			.border_radius_all(10px);
+			border:3px solid @bleu_foncer;
+		}
+	}
+
+	.liste_annonce_info
+	{
+		h3
+		{
+			.clear_padding_margin;
+			font-size:18px;
+		}
+
+		div
+		{
+			.clear_padding_margin;
+		}
+
+		.preview_info
+		{
+			font-size:16px;
+		}
+
+		.info_geo
+		{
+			.habillage_style_bt_vert;
+
+			a
+			{
+				color:black;
+				text-decoration: underline;
+			}
+		}
+
+		.link_preview
+		{
+			display: block;		
+			font-size:16px;
+			font-weight: bold;
+			color:@coul_gamme_2;
+			text-decoration: underline;
+			margin-top:10px;
+		}
+	}
+}
+
+/* ---------------------- */
+/* BLOCK TOP ANNONCE JOUR */
+/* ---------------------- */
+.block_top_annonce_jour
+{
+	.block_type_content_full
+	{
+		position:relative;
+		.top_annonce_jour_img
+		{
+			width:100%;
+		}
+		.legende_top_jour
+		{
+			position:absolute;
+			bottom:0px;
+			left:0px;
+			width:100%;
+			background-image:url('../font-noir-transparent.png?i=1');
+			padding-top:10px;
+			padding-left:20px;
+			padding-bottom:20px;
+			.legende_top_jour_info
+			{
+				.nom
+				{
+					color:#939393;
+					font-size:16px;
+				}
+				.lieu
+				{
+					color:@blanc;
+					font-size:18px;
+				}
+			}
+			.legende_top_jour_bt
+			{
+				.habillage_style_bt_vert;
+			}
+		}
+	}
 }
 
 /* ------------- */
