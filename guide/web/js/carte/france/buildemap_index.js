@@ -18,13 +18,7 @@ $(document).ready(function() {
 			},
 		    onRegionClick: function(element, code, region)
 		    {
-		        var message = 'Région : "'
-		            + region 
-		            + '" || Id : "'
-		            + code
-					+ '"';
-             
-		        alert(message);
+
 		    }
 		}
 	);
