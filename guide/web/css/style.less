@@ -45,14 +45,98 @@
 	color:@blanc;
 } 
 
-.habillage_style_bt_vert
+
+/* ---------------- */
+/* boutton du site  */
+/* ---------------- */
+
+.bt_lieu
 {
-	padding:10px 15px 10px 25px;
-	background-color: @coul_gamme_5;
+	background-color:@coul_gamme_5;
+	border-color: @coul_gamme_5;
 	color:@blanc;
-	display: inline-block;
-	.border_radius_all(10px);				
 	font-size:16px;
+	a
+	{
+		color:black;
+		text-decoration: underline;
+	}
+	&:hover
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;
+	}
+	&:active
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;
+	}
+	&:focus
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;		
+	}
+	&:visited
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;		
+	}
+}
+
+.bt_plus_homepage
+{
+	background-color:@coul_gamme_5;
+	border-color: @coul_gamme_5;
+	color:@blanc;
+	font-size:16px;
+	&:hover
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;
+	}
+	&:active
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;
+	}
+	&:focus
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;		
+	}
+	&:visited
+	{
+		background-color:@coul_gamme_5;
+		color:@blanc;		
+	}
+}
+
+.bt_phone
+{
+	background-color:@coul_gamme_2;
+	border-color: @coul_gamme_2;
+	color:@blanc;
+	font-size:16px;
+	&:hover
+	{
+		background-color:@coul_gamme_2;
+		color:@blanc;
+	}
+	&:active
+	{
+		background-color:@coul_gamme_2;
+		color:@blanc;
+	}
+	&:focus
+	{
+		background-color:@coul_gamme_2;
+		color:@blanc;		
+	}
+	&:visited
+	{
+		background-color:@coul_gamme_2;
+		color:@blanc;		
+	}
 }
 
 /* ---------------- */
@@ -348,13 +432,7 @@ body, html
 
 		.info_geo
 		{
-			.habillage_style_bt_vert;
 
-			a
-			{
-				color:black;
-				text-decoration: underline;
-			}
 		}
 
 		.link_preview
@@ -404,11 +482,84 @@ body, html
 					font-size:18px;
 				}
 			}
-			.legende_top_jour_bt
+		}
+	}
+}
+
+/* ------------- */
+/* Annonce */
+/* ------------- */
+#profil_conteneur
+{
+	padding:20px;
+	#profil_conteneur_header
+	{
+		margin-bottom:20px;
+		.image_profil
+		{
+			img
 			{
-				.habillage_style_bt_vert;
+				width:100%;
+				max-width: 200px;
+				text-align:center;
+				.border_radius_all(10px);
+				border:3px solid @bleu_foncer;
 			}
 		}
+
+		.coordonees
+		{
+			padding:0px 20px 0px 20px;
+		}
+	}
+
+	h2
+	{
+		font-size: 18px;
+		color: @coul_gamme_2;
+	}
+
+	.profil_titre
+	{
+		border-bottom: 2px solid @coul_gamme_2;
+		margin-bottom:15px;
+	}
+
+	.profil_contenu_info
+	{
+		margin-bottom:30px;
+	}
+
+	.prestation_logo
+	{
+		text-align:center;
+		margin-bottom:10px;
+		padding:5px;
+
+		img
+		{
+			width:80%;
+			max-width:110px;
+		}
+	}
+
+	#reduction
+	{
+		font-size: 16px;
+		color:@coul_gamme_2;
+		font-weight: bold;
+	}
+
+	.profil_contenu_img
+	{
+		margin-bottom:20px;
+		text-align: left;
+
+		img
+		{
+			width:90%;
+			border:2px solid #D1D1D1;
+		}			
 	}
 }
 

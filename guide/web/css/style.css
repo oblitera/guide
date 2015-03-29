@@ -3,15 +3,78 @@
   background-color: #05dbf2;
   color: white;
 }
-.habillage_style_bt_vert {
-  padding: 10px 15px 10px 25px;
+/* ---------------- */
+/* boutton du site  */
+/* ---------------- */
+.bt_lieu {
+  background-color: #71b620;
+  border-color: #71b620;
+  color: white;
+  font-size: 16px;
+}
+.bt_lieu a {
+  color: black;
+  text-decoration: underline;
+}
+.bt_lieu:hover {
   background-color: #71b620;
   color: white;
-  display: inline-block;
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
+}
+.bt_lieu:active {
+  background-color: #71b620;
+  color: white;
+}
+.bt_lieu:focus {
+  background-color: #71b620;
+  color: white;
+}
+.bt_lieu:visited {
+  background-color: #71b620;
+  color: white;
+}
+.bt_plus_homepage {
+  background-color: #71b620;
+  border-color: #71b620;
+  color: white;
   font-size: 16px;
+}
+.bt_plus_homepage:hover {
+  background-color: #71b620;
+  color: white;
+}
+.bt_plus_homepage:active {
+  background-color: #71b620;
+  color: white;
+}
+.bt_plus_homepage:focus {
+  background-color: #71b620;
+  color: white;
+}
+.bt_plus_homepage:visited {
+  background-color: #71b620;
+  color: white;
+}
+.bt_phone {
+  background-color: #309ac1;
+  border-color: #309ac1;
+  color: white;
+  font-size: 16px;
+}
+.bt_phone:hover {
+  background-color: #309ac1;
+  color: white;
+}
+.bt_phone:active {
+  background-color: #309ac1;
+  color: white;
+}
+.bt_phone:focus {
+  background-color: #309ac1;
+  color: white;
+}
+.bt_phone:visited {
+  background-color: #309ac1;
+  color: white;
 }
 /* ---------------- */
 /* Element du site  */
@@ -272,20 +335,6 @@ html {
 .item_liste_annonce .liste_annonce_info .preview_info {
   font-size: 16px;
 }
-.item_liste_annonce .liste_annonce_info .info_geo {
-  padding: 10px 15px 10px 25px;
-  background-color: #71b620;
-  color: white;
-  display: inline-block;
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  font-size: 16px;
-}
-.item_liste_annonce .liste_annonce_info .info_geo a {
-  color: black;
-  text-decoration: underline;
-}
 .item_liste_annonce .liste_annonce_info .link_preview {
   display: block;
   font-size: 16px;
@@ -321,15 +370,59 @@ html {
   color: white;
   font-size: 18px;
 }
-.block_top_annonce_jour .block_type_content_full .legende_top_jour .legende_top_jour_bt {
-  padding: 10px 15px 10px 25px;
-  background-color: #71b620;
-  color: white;
-  display: inline-block;
+/* ------------- */
+/* Annonce */
+/* ------------- */
+#profil_conteneur {
+  padding: 20px;
+}
+#profil_conteneur #profil_conteneur_header {
+  margin-bottom: 20px;
+}
+#profil_conteneur #profil_conteneur_header .image_profil img {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
+  border: 3px solid #2161a7;
+}
+#profil_conteneur #profil_conteneur_header .coordonees {
+  padding: 0px 20px 0px 20px;
+}
+#profil_conteneur h2 {
+  font-size: 18px;
+  color: #309ac1;
+}
+#profil_conteneur .profil_titre {
+  border-bottom: 2px solid #309ac1;
+  margin-bottom: 15px;
+}
+#profil_conteneur .profil_contenu_info {
+  margin-bottom: 30px;
+}
+#profil_conteneur .prestation_logo {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#profil_conteneur .prestation_logo img {
+  width: 80%;
+  max-width: 110px;
+}
+#profil_conteneur #reduction {
   font-size: 16px;
+  color: #309ac1;
+  font-weight: bold;
+}
+#profil_conteneur .profil_contenu_img {
+  margin-bottom: 20px;
+  text-align: left;
+}
+#profil_conteneur .profil_contenu_img img {
+  width: 90%;
+  border: 2px solid #D1D1D1;
 }
 /* ------------- */
 /* FOOTER */

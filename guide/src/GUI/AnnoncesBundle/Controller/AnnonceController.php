@@ -10,4 +10,9 @@ class AnnonceController extends Controller
     {
         return $this->render('GUIAnnoncesBundle:Annonce:index.html.twig');
     }
+
+    public function voirAction()
+    {
+        return $this->render('GUIAnnoncesBundle:Annonce:voir.html.twig');    	
+    }
 }

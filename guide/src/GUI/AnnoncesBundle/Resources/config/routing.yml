@@ -1,3 +1,7 @@
 gui_annonces_homepage:
     path:     /annonce/accueil
     defaults: { _controller: GUIAnnoncesBundle:Annonce:index }
+
+gui_annonces_voir:
+    path:     /annonce/voir
+    defaults: { _controller: GUIAnnoncesBundle:Annonce:voir }
