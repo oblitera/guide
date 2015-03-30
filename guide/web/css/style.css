@@ -424,6 +424,18 @@ html {
   width: 90%;
   border: 2px solid #D1D1D1;
 }
+#profil_conteneur .profil_technique_peche {
+  padding: 15px;
+}
+#profil_conteneur .profil_technique_peche img {
+  width: 100%;
+}
+#profil_conteneur .profil_espece_item {
+  padding: 15px;
+}
+#profil_conteneur .profil_espece_item img {
+  width: 100%;
+}
 /* ------------- */
 /* FOOTER */
 /* ------------- */
