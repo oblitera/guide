@@ -1,3 +1,8 @@
+/*@coul_gamme_1:#FEFFF5;
+@coul_gamme_2:#439487;
+@coul_gamme_3:#D5FFC0;
+@coul_gamme_4:#012D63;
+@coul_gamme_5:#006ECC;*/
 /* Classes abstraites */
 .over_bt_header {
   background-color: #05dbf2;
@@ -288,6 +293,14 @@ html {
   color: white;
 }
 #body_menu_d a:hover {
+  background-color: #05dbf2;
+  color: white;
+}
+#body_menu_d a:focus {
+  background-color: #05dbf2;
+  color: white;
+}
+#body_menu_d a:active {
   background-color: #05dbf2;
   color: white;
 }
