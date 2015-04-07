@@ -5,3 +5,7 @@ gui_annonces_homepage:
 gui_annonces_voir:
     path:     /annonce/voir
     defaults: { _controller: GUIAnnoncesBundle:Annonce:voir }
+
+gui_formulaire_prestation:
+    path:     /annonce/formulaire/prestation
+    defaults: { _controller: GUIAnnoncesBundle:Annonce:formulaireprestation }

@@ -14,14 +14,11 @@ class AnnonceController extends Controller
 
     public function voirAction()
     {
-    	$redis = $this->get('snc_redis.default');
-    	$cache = $redis->get('voir');
-    	return new Response($cache); 
+        return $this->render('GUIAnnoncesBundle:Annonce:voir.html.twig');    	
+    }
 
-    	/*$reponse = $this->render('GUIAnnoncesBundle:Annonce:voir.html.twig');
-    	$redis = $this->get('snc_redis.default');
-    	$redis->set("voir",$reponse->getContent());*/
-
-        //return $this->render('GUIAnnoncesBundle:Annonce:voir.html.twig');    	
+    public function formulaireprestationAction()
+    {
+        return $this->render('GUIAnnoncesBundle:Annonce:formulaireprestation.html.twig');       
     }
 }
